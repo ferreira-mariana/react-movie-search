@@ -32,11 +32,13 @@ export default function SearchMovies() {
         />
         <button className="button">Search</button>
       </form>
-      <div className="card-list">
-        {movies.filter(movie => movie.poster_path).map(movie => (
-          <MovieCard movie={movie}  key={movie.id} />
-        ))}
-      </div>
+      {movies && 
+        <div className="card-list">
+          {movies.filter(movie => movie.poster_path).map(movie => (
+            <MovieCard movie={movie}  key={movie.id} />
+          ))}
+        </div>
+      }
     </>
   )
 }
