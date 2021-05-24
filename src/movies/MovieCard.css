@@ -3,11 +3,11 @@
 }
 
 .card {
-  padding: 2rem 4rem;
+  padding: 4rem;
   border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
   margin-bottom: 2rem;
   background-color: white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 .card--title {
@@ -18,4 +18,17 @@
 .card--image {
   display: block;
   margin: 0 auto;
+  border-radius: 10px;
+}
+
+@media (min-width:786px) {
+  .card {
+    display: grid;
+    grid-template-columns: 185px auto;
+    grid-gap: 4rem;
+  }
+  
+  .card--title {
+    margin-top: 0;
+  }
 }

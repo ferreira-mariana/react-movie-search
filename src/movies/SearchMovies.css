@@ -2,14 +2,9 @@
   display: grid;
 }
   
-.label {
-  font-size: 1.2rem;
-  margin-bottom: 0.2rem;
-  text-transform: uppercase;
-}
-
 .input {
   font-size: 1.6rem;
+  font-family: inherit;
   padding: 0.5rem 2rem;
   line-height: 2.8rem;
   border-radius: 20px;
@@ -18,18 +13,26 @@
 }
 
 .button {
-  font-size: 1.4rem;
-  background-color: rgba(0,0,0,0.75);
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(229, 9, 20, 0.95);
   color: white;
   padding: 1rem 2rem;
-  border: 1px solid rgba(0,0,0,0.75);
+  border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 250ms;
 }
 
 .button:hover {
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(229, 9, 20, 0.75);
+}
+
+.message {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-top: 4rem;
 }
 
 @media (min-width:786px) {

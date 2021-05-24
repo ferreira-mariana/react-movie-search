@@ -26,7 +26,7 @@ export default function SearchMovies() {
   return (
     <>
       <form className="form" onSubmit={searchMovies}>
-        <label className="label" htmlFor="query">Movie name</label>
+        <label className="label" htmlFor="query"></label>
         <input className="input" type="text" name="query" placeholder="i.e. Hidden Figures" 
           value={query} onChange={(event) => setQuery(event.target.value)}
         />
@@ -38,6 +38,9 @@ export default function SearchMovies() {
             <MovieCard movie={movie}  key={movie.id} />
           ))}
         </div>
+      }
+      {!movies &&
+        <p className="message">What movie are you looking for?</p>
       }
     </>
   )
